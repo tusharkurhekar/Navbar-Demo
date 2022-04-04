@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(187, 229, 235); padding: 20px; margin: 0px;
+    background-image: -moz-element();
+    text-align: center;
+}
+
+h1, h2, h3, p, ul, li {
+    font-family: sans-serif;
+}
+
+ul.header li {
+    display: inline; list-style-type: none; margin: 0px;
+}
+
+ul.header {
+    background-color: rgb(68, 85, 231); padding: 20px;
+    align-content: center;
+    display: inline-block;
+}
+ul.header li a {
+    color: rgb(255, 255, 255); font-weight: bold; text-decoration: none; padding: 20px; display: inline;
+}
+
+.content {
+    background-color: rgba(243, 243, 243, 0.87); padding: 20px;
+}
+.content h2 {
+    padding: 0; margin: 0;
+}
+.content li {
+    margin-bottom: 10px;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(12rem, 16rem));
+    gap: 10rem;
+    justify-content: center;
+}
+
+.card{
+    overflow: hidden;
+    box-shadow: 2px 4px 4px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+    padding-top: 10px;
+}
+
+.card_image{
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card_title {
+    padding: 1rem;
+    text-align: center;
+    padding-top: 5px;
+}
+.card_description{
+    padding: 0 1rem;
+    text-align: center;
+    text-indent: 2px;
+}
+
+.card_btn{
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 3px solid rgb(119, 212, 111);
+    display: flex;
+    align-items: center;
+    background: lightgrey;
+    color: rgb(230, 117, 117);
+    border-radius: 5px;
+    transition: background 200ms ease-in,color 200ms ease-in;
+    text-align: center;
+    padding-left: 90px;
+    padding-right: 50px;
+}
+.human_image{
+    height: 20rem;
+    width: 100%;
+    border-radius: 50px;
+    object-fit:contain;
+    background: transparent;
+}
+.job_btn{
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    background: lightgrey;
+    /* color: black; */
+    border-radius: 5px;
+    text-align: center;
+    padding-left: 90px;
+    padding-right: 50px;
+}
+
+.inputFields{
+    padding: 10px;
+}
